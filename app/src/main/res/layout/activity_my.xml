@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity"
+    android:background="#bede7f5e"
+    >
+
+    <TextView
+        android:text="Created by Ryan Mullings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="#ffff0033"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Wire Number"
+        android:id="@+id/textView2"
+        android:textIsSelectable="false"
+        android:textColor="#fffff8f6"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/numb"
+        android:background="#ffdfffd4"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Color To List"
+        android:id="@+id/button"
+        android:layout_below="@+id/numb"
+        android:layout_centerHorizontal="true" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#ff39bf21"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear List"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textColor="#ffffffff"
+            android:background="#ff000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="303dp"
+            android:id="@+id/listnum"
+            android:layout_gravity="left|top"
+            android:password="false"
+            android:textSize="50sp" />
+    </FrameLayout>
+
+</RelativeLayout>
